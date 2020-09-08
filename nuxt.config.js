@@ -15,10 +15,13 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
+    htmlAttrs: {
+      lang: 'ru'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
@@ -29,6 +32,7 @@ export default {
   ** Global CSS
   */
   css: [
+    /* { requireModuleExtension: false } */
   ],
   /*
   ** Plugins to load before mounting the App
